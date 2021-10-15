@@ -1,0 +1,202 @@
+:root {
+  --main-font: Georgia, "Times New Roman", Times, serif;
+  --primary-color: rgb(187, 187, 14);
+  --secondary-color: rgb(21, 13, 90);
+  --main-background-color: rgba(245, 245, 245, 0.9);
+}
+body {
+  font-family: var(--main-font);
+  background-color: var(--main-background-color);
+}
+/* Navbar and Hero */
+.navbar {
+  font-family: var(--main-font);
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  width: fit-content;
+  z-index: 1;
+}
+
+#toggleMobileMenu {
+  z-index: 10;
+}
+#nav-link {
+  background-color: rgba(245, 245, 245, 0.76);
+  color: var(--primary-color);
+  font-size: 19pt;
+  font-weight: bold;
+  /* z-index: 1;
+  position: absolute; */
+}
+.navbar a:hover {
+  transform: scale(1.2);
+}
+
+#navbarToggler {
+  background-color: var(--main-background-color);
+  -webkit-box-shadow: 0px 2px 8px 6px rgba(79, 79, 79, 0.54);
+  box-shadow: 0px 2px 8px 6px rgba(79, 79, 79, 0.54);
+  border: 0.2em solid rgba(187, 187, 14, 0.171);
+}
+#heroContainer {
+  margin-top: 7%;
+}
+#heroDisplay {
+  background-color: var(--main-background-color);
+  height: 50%;
+
+  -webkit-box-shadow: 0px 2px 8px 6px rgba(79, 79, 79, 0.54);
+  box-shadow: 0px 2px 8px 6px rgba(79, 79, 79, 0.54);
+  border: 0.2em solid rgba(187, 187, 14, 0.171);
+}
+#name {
+  font-family: var(--main-font);
+  font-size: 4em;
+  color: var(--secondary-color);
+  word-wrap: break-word;
+}
+#career-title {
+  font-family: var(--main-font);
+  font-size: 2em;
+  color: var(--primary-color);
+  word-wrap: break-word;
+}
+#quote {
+  font-family: var(--main-font);
+  font-size: large;
+  color: var(--secondary-color);
+}
+.background-img {
+  background-image: url("./assets/jordan-whitt-D8M2oUAcZ-w-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 47rem;
+  -webkit-box-shadow: 0px 13px 14px -10px rgba(79, 79, 79, 0.3);
+  box-shadow: 0px 13px 14px -10px rgba(79, 79, 79, 0.3);
+}
+
+h1 {
+  color: var(--secondary-color);
+}
+#about-me {
+  -webkit-box-shadow: 0px 0px 26px -2px rgba(79, 79, 79, 0.5);
+  box-shadow: 0px 0px 26px -2px rgba(79, 79, 79, 0.3);
+}
+#aboutMeImg {
+  width: 80%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 21px -2px rgba(79, 79, 79, 0.55);
+  box-shadow: 0px 0px 21px -2px rgba(79, 79, 79, 0.55);
+  /* margin-top: 4%; */
+}
+#skills {
+  color: var(--secondary-color);
+}
+#resume {
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: large;
+  -webkit-box-shadow: 0px 0px 21px -2px rgba(79, 79, 79, 0.55);
+  box-shadow: 0px 0px 21px -2px rgba(79, 79, 79, 0.55);
+}
+#resume:hover {
+  background-color: var(--primary-color);
+}
+
+#portfolio {
+  background-color: rgba(182, 174, 174, 0.116);
+  -webkit-box-shadow: 0px -6px 14px -2px rgba(79, 79, 79, 0.34);
+  box-shadow: 0px -6px 14px -2px rgba(79, 79, 79, 0.34);
+}
+#portImg {
+  background-color: var(--main-background-color);
+}
+.card {
+  position: relative;
+  overflow: hidden;
+
+  box-shadow: 10% lightgray;
+}
+#cardLink {
+  color: white;
+}
+#portfolioCard:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 220%;
+  background: rgba(139, 134, 137, 0.7);
+  top: -100%;
+  right: -100%;
+  z-index: 1;
+  transform-origin: center top 0;
+  transition: 0.5s;
+}
+
+#portfolioCard:hover:before {
+  left: 0%;
+}
+
+.card img {
+  width: 100%;
+  height: 275px;
+}
+
+.card-text {
+  width: 100%;
+  padding: 0 25px;
+  position: absolute;
+  top: -75%;
+  right: 10%;
+  color: #fff;
+  left: 5%;
+  z-index: 1;
+  transition: 0.75s;
+}
+.card-title h3 {
+  z-index: 100;
+}
+#contact-me {
+  background-color: var(--main-background-color);
+  -webkit-box-shadow: 0px -6px 14px -2px rgba(79, 79, 79, 0.34);
+  box-shadow: 0px -6px 14px -2px rgba(79, 79, 79, 0.34);
+}
+.card:hover .card-text {
+  top: 80px;
+}
+/* Form Stuff */
+#fs-frm {
+  display: flex;
+  flex-direction: column;
+}
+hr {
+  width: 29%;
+  height: 5%;
+  border: 0.03em solid black;
+  -webkit-box-shadow: 0px 10px 17px 2px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 10px 17px 2px rgba(0, 0, 0, 0.36);
+}
+.contactText {
+  height: 2px;
+  border: none;
+}
+.contactMeForm {
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 8px 6px rgba(79, 79, 79, 0.35);
+  box-shadow: 0px 2px 8px 6px rgba(79, 79, 79, 0.3);
+  width: 60%;
+  /* border: 1px solid; */
+}
+#footer {
+  -webkit-box-shadow: 0px -10px 14px -10px rgba(79, 79, 79, 0.44);
+  box-shadow: 0px -10px 14px -10px rgba(79, 79, 79, 0.44);
+}
+#submit {
+  width: fit-content;
+}
+.fa-github {
+  color: black;
+}
