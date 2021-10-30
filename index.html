@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +15,7 @@
     
     <title>Laurice's Howard Web Development Portfolio 2.0</title>
 </head>
-<body data-bs-spy="scroll" data-bs-target="#top-nav-bar" data-bs-offset="10" tabindex="0">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100" >
     <!-- I initially had my navbar and all of my sections wrapped in a single div.
         The navbar and hero were then wrapped together in a div so that the transparent
         navbar, with it's visible link tags of course, sit nicely on top of the landing 
@@ -26,36 +25,61 @@
         X-axis even overriding with mx-auto, or CSS margin-right: 0 !important; 
         margin-left: 0 !important.-->
         
-       
-    <div class="background-img d-flex flex-column">
-         <nav class="navbar navbar-expand-md navbar-dark">           
+           
+  <!-- <nav class="navbar navbar-expand-lg fixed-top navbar-dark"> 
+               <div class="container-fluid">         
                 <button 
-                    class="navbar-toggler ms-start" 
+                    class="navbar-toggler" 
                     type="button" 
                     data-bs-toggle="collapse" 
-                    data-bs-target="#toggleMobileMenu"
-                    aria-controls="toggleMobileMenu" 
+                    data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdo#navbarNavDropdown" 
                     aria-expanded="false" 
                     aria-label="Toggle navigation"
                     >
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse show" id="toggleMobileMenu">
-                    <ul class="navbar-nav mt-2 mx-auto text-center" id="menu">
-                        <li class="nav-item  px-1" id="nav-link">
-                            <a class="nav-link" aria-current="page" href="#about-me" >About</a>
+             
+                <div class="collapse navbar-collapse" id="navbarNavDropdo#navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto me-5 mt-2 text-center" id="menu">
+                        <li class="nav-item px-0" id="nav-link">
+                            <a class="nav-link" aria-current="page" href="#about-me">About</a>
                         </li> 
-                        <li class="nav-item  px-1" id="nav-link">
+                        <li class="nav-item px-0" id="nav-link">
                             <a class="nav-link"  href="#portfolio">Portfolio</a>
                         </li>
-                        <li class="nav-item  px-1" id="nav-link">
+                        <li class="nav-item px-0" id="nav-link">
                             <a class="nav-link"  href="#contact-me">Contact</a>
                         </li>
                     </ul>
+            </div>
         </div>
-    </nav>
-        <div class="container mx-auto px-5 d-flex align-self-center mt-5" id="heroContainer">
-            <div class="container mt-4 px-3" id="heroDisplay">
+    </nav> -->
+    <nav class="navbar navbar-expand-lg navbar-default fixed-top">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler ms-auto me-3 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto me-1 mt-2 text-end" id="menu">
+                <li class="nav-item" id="nav-link">
+                    <a class="nav-link px-auto" aria-current="page" href="#about-me">About</a>
+                </li> 
+                <li class="nav-item" id="nav-link">
+                    <a class="nav-link px-auto"  href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item" id="nav-link">
+                    <a class="nav-link px-auto"  href="#contact-me">Contact</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="background-img d-flex flex-column">
+    
+        <div class="container mx-auto px-5 d-flex align-self-center position-relative" id="heroContainer">
+            <div class="container px-3" id="heroDisplay">
                 <div class="heroText">
                     <!-- <img class="d-block mx-auto mb-4" src="./assets/jordan-whitt-D8M2oUAcZ-w-unsplash.jpg" alt="" width="72" height="57"> -->
                     <h1 class="display-5 fw-bold hero-text text-center text-wrap " id="name">Laurice Howard</h1>
@@ -66,7 +90,7 @@
                         <div class="d-flex justify-content-center">
                         <img id="aboutMeImg" src="./assets/about_me.png" class="my-2" >
                     </div>
-                        <p class="text-center mt-4 mb-2" id="quote">No valid plans for the future can be made by
+                        <p class="text-center mt-4 mb-0" id="quote">No valid plans for the future can be made by
                             those who
                             have no capacity for living now. <br> - Alan Watts
                         </p>
@@ -94,7 +118,7 @@
                         problems. I enjoy creating user-friendly web applications using JavaScript.</h4>
                     </p>
                     <p>
-                    <h5 class="mb-4">In 2014, I finished my Bachelor in Sociology at Purdue University 
+                    <h5>In 2014, I finished my Bachelor in Sociology at Purdue University 
                         then started my career in sales and customer service in both
                         the Mortgage industry as a Mortgage Broker before moving on to work 5 years as a bartender
                         being promoted to senior bartender by year 2 at Metro NightCub all while pursuing my passion in music 
@@ -108,24 +132,129 @@
                     </p>
                     
                         <a href="./assets/Laurice Howard's Career Resume (1).pdf" id="resume"
-                        class="btn mt-3 ms-5" target="_blank"> Resume</a>
+                        class="btn mt-1 ms-3 mb-4" target="_blank"> Resume</a>
            
                 </div>
                
                     <h1 class="d-flex justify-content-center my-3" id="skills">Skills</h1>
-                    <div class="d-flex justify-content-around mb-5" id="skill-icons"><i
-                            class="fab fa-html5 fa-5x"></i><i class="fab fa-css3-alt fa-5x"></i><i
-                            class="fab fa-js fa-5x"></i><i class="fab fa-bootstrap fa-5x"></i></div>
+                    <div class="d-flex justify-content-around flex-wrap mb-5" id="skill-icons">
+                        <i class="fab fa-html5 fa-5x mb-2"></i>
+                        <i class="fab fa-css3-alt fa-5x mb-2"></i>
+                        <i class="fab fa-js fa-5x mb-2"></i>
+                        <i class="fab fa-bootstrap fa-5x mb-2"></i>
+                        <i class="fab fa-react fa-5x mb-2"></i>
+                        <i class="fab fa-node-js fa-5x mb-2"></i>
+                    </div>
         </div>
- 
+        <div id="portfolio" class="pb-5">
+            <h1 class="portfolioHeader text-center mx-5 py-3">Portfolio</h1>
+            <div class="container-fixed project-cards d-flex justify-content-around flex-wrap">
+                <div class="row card-row mx-0">               
+                        <div class="card-text position-relative" id="portfolioCardText">
+                                <h3>More Perspective</h3>
+                                <h5>Created using Typescript with ReactJS, NodeJS, and PostgreSQL</h5>
+                                <a id="projectLink" href="https://more-perspective-client-ljh.herokuapp.com/" target="_blank">View
+                                    Entire Project<span><img class="portImg" src="./assets/more-perspective.png"></span></a>
+                        </div>
+                 
+                    <!-- <div class="col-md-4 px-0">
+                        <div class="card border-0 rounded-0" id="portfolioCard">
+                            <img src="./assets/park-planner-screen-shot.png" alt="" class="">
+                            <div class="card-text" id="portfolioCardText">
+                                <h3>Park Planner App</h3>
+                                <h5>Contributed to Trip Search and Saved Trips components using ReactJS, NodeJS, and PostgreSQL</h5>
+                                <a id="cardLink" href="https://park-planner-app.herokuapp.com/" target="_blank">View
+                                    Entire Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 px-0">
+                        <div class="card border-0 rounded-0" id="portfolioCard">
+                            <img src="assets/Screen Shot 2021-05-08 at 10.08.42 AM.png" alt="">
+                            <div class="card-text" id="portfolioCardText">
+                                <h3>NASA's Most Popular Project</h3>
+                                <h5>Created using HTML5, CSS3, JS, and BootStrap </h5>
+                                <a id="cardLink" href="https://popularnasaproject.web.app" target="_blank">View Entire
+                                    Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 px-0">
+                        <div class="card border-0 rounded-0" id="portfolioCard">
+                            <img src="./assets/static_website.png" alt="">
+                            <div class="card-text" id="portfolioCardText">
+                                <h3>Star Wars Static Website</h3>
+                                <h5>Created using HTML5 & CSS3</h5>
+                                <a id="cardLink" href="https://lhoward42.github.io/Static_Website/" target="_blank">View
+                                    Entire Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+    </div>
+    <div id="contact-me" class="container-fluid d-flex align-items-center flex-column my-0 pb-2 px-0">
+        <!-- Contact Me Form Spree -->
 
+        <h1 class="contactText text-center mt-4 pt-3 pb-5">Contact Me</h1>
+        <hr class="mt-3">
+        <div class="contactMeForm justify-content-around px-5 py-4 my-4">
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mzbybngb"
+                method="post">
+                <fieldset id="fs-frm-inputs">
 
-    <script src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+                    <div class="row align-content-center mb-2 my-3">
+                        <label class="mb-2" for="full-name">Full Name:</label>
+                        <input type="text" name="name" class="form-control" id="full-name" placeholder="First and Last"
+                            required="">
+                    </div>
+
+                    <div class="row align-content-center mb-2 my-3">
+                        <label class="mb-2" for="email-address">Email Address:</label>
+                        <input type="email" class="form-control" name="_replyto" id="email-address"
+                            placeholder="email@domain.tld" required="">
+                    </div>
+
+                    <div class="row align-content-center mb-2 my-3">
+                        <label class="mb-2" for="message">Message:</label>
+                        <textarea rows="5" name="message" id="message">
+                    </textarea>
+                    </div>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+
+                </fieldset>
+
+                <button class="btn btn-primary mx-auto" id="submit" type="submit">Submit form</button>
+            </form>
+        </div>
+    </section>
+    </div>
+    <div class="card text-end" id="footer">
+        <div class="card-body">
+            <p>OtherPlatforms:</p>
+            <a href="https://github.com/lhoward42" class="card-title"><i class="fab fa-github fa-3x"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="card-footer text-center text-muted">
+            © 2021 Copyright:
+            Laurice Howard
+        </div>
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ"
-        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script>
+            $(window).scroll(function(){
+                $('nav').toggleClass('scrolled', $(this).scrollTop() > 70);
+            });
+
+            $(function () {
+            $(document).scroll(function () {
+            var $nav = $(".navbar-fixed-top");
+            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+});
+        </script>
 </body>
 </html>
