@@ -12,7 +12,10 @@ body {
   background-color: var(--main-background-color);
   position: relative;
 }
-
+video {
+  height: 2em;
+  width: 2em;
+}
 #nav-link {
   /* background-color: rgba(97, 94, 94, 0.132); */
   color: var(--primary-color);
@@ -53,11 +56,11 @@ body {
     padding: 0 !important;
   }
 }
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .navbar {
     background-color: transparent;
   }
-}
+} */
 
 @media (max-width: 399px) {
   .navbar-nav .nav-link {
@@ -83,14 +86,27 @@ body {
   position: relative;
 } */
 
-#navbarToggler {
-  /* padding: 0%;  */
-  background-color: var(--main-background-color);
-  -webkit-box-shadow: 0px 2px 8px 6px rgba(79, 79, 79, 0.54);
-  box-shadow: 0px 2px 8px 6px rgba(79, 79, 79, 0.54);
-  border: 0.2em solid rgba(187, 187, 14, 0.171);
+.navbar-toggler {
+  padding: 0.07em 0.05em 0.07em 0.07em;
+  display: flex;
+  justify-content: center;
+  /* background-color: rgba(28, 26, 26, 0.523); */
+  /* background-color: rgba(128, 128, 128, 0.797); */
+  /* -webkit-box-shadow: 0px 2px 8px 6px rgba(79, 79, 79, 0.54);
+  box-shadow: 0px 1px 2px 2px rgba(79, 79, 79, 0.54); */
+  border-radius: 12%;
+  /* border: 0.05em solid rgba(187, 187, 14, 0.742); */
 }
-
+.nav-button {
+  /* border: 0.03em solid rgba(0, 0, 0, 0.742); */
+  /* background-color: rgb(101, 97, 97); */
+  /* border-radius: 10%; */
+  /* border: .01em solid rgba(29, 29, 29, 0.906); */
+  height: 3.5em;
+  
+  /* -webkit-box-shadow: 0px 2px 8px 6px rgba(79, 79, 79, 0.54);
+  box-shadow: 1px 1px 2px 1px rgba(31, 30, 30, 0.803); */
+}
 /* #menu {
   border: 0.2em solid rgba(187, 187, 14, 0.171);
 } */
@@ -102,7 +118,7 @@ body {
 }
 #heroDisplay {
   background-color: var(--main-background-color);
-  margin: 70px 0 -30px !important;
+  margin: 120px 0 -30px !important;
   height: 100%;
   -webkit-box-shadow: 0px 2px 8px 6px rgba(79, 79, 79, 0.54);
   box-shadow: 0px 2px 8px 6px rgba(79, 79, 79, 0.54);
@@ -212,17 +228,18 @@ body {
   color: var(--secondary-color);
   overflow-y: hidden;
   transform-style: preserve-3d;
+  margin-bottom: 5px;
 }
 @media (max-width: 749px) {
   #quote {
     padding: 0 1em;
-    margin: 8px 0 10px !important;
+    margin: 8px 0 20px !important;
   }
 }
 @media (min-width: 750px) {
   #quote {
     padding: 0 1.5em !important;
-    margin: 3px 0 10px !important;
+    margin: 3px 0 20px !important;
   }
 }
 /* @media all and (min-width: 750px), (max-width: 800px) {
@@ -241,7 +258,7 @@ body {
   width: 100vw;
   top: 0;
 
-  height: 125vh;
+  height: 100vh;
   margin-right: 0 !important;
   margin-left: 0 !important;
   -webkit-box-shadow: 0px 13px 14px -10px rgba(79, 79, 79, 0.3);
@@ -302,7 +319,39 @@ h5 {
 #skills {
   color: var(--secondary-color);
 }
+@media (max-width: 768px) {
+  .fa-5x {
+    font-size: 3em !important;
+  }
+}
 
+@media (min-width: 768px) {
+  .skills {
+    margin-right: 3rem !important;
+    margin-left: 3rem !important;
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .skills {
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+}
+.icon {
+  height: 5em;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .icon {
+    height: 3em !important;
+  }
+}
 #resume {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -339,11 +388,9 @@ a:hover > span {
   visibility: visible;
 }
 textarea {
-  background-color: rgba(255, 255, 255, 0.653);
+  background-color: rgba(255, 255, 255, 0.255);
 }
-input {
-  background-color: rgba(255, 255, 255, 0.653);
-}
+
 /* Form Stuff */
 #fs-frm {
   display: flex;
@@ -360,7 +407,7 @@ hr {
 .contactMeForm {
   /* -webkit-box-shadow: 0px 2px 8px 6px rgba(79, 79, 79, 0.35);
   box-shadow: 0px 2px 8px 6px rgba(79, 79, 79, 0.3); */
-  width: 60%;
+  width: 100%;
   /* border: 1px solid; */
 }
 #footer {
@@ -370,6 +417,12 @@ hr {
 #submit {
   width: fit-content;
 }
-.fa-github {
+.footer-icons {
   color: black;
+}
+.form-control {
+  border: none !important;
+}
+.input-background {
+  background-color: rgba(255, 255, 255, 0.255);
 }
