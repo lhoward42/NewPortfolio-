@@ -459,6 +459,15 @@ h3 {
   /* border: .1em solid var(--secondary-color); */
 }
 
+.title-text {
+  color: var(--primary-color);
+}
+
+.description-text {
+  color: var(--secondary-color);
+}
+
+
 .portbtn {
   background-color: rgb(248, 237, 55, 85%);
   color: var(--secondary-color);
@@ -501,9 +510,10 @@ hr {
 }
 
 .contact-form {
-  border: 0.1em solid var(--secondary-color);
+  border: 0.05em solid var(--secondary-color);
   -webkit-box-shadow: 0px 2px 8px 6px rgba(79, 79, 79, 0.35);
   box-shadow: 0px 2px 8px 6px rgba(79, 79, 79, 0.3);
+  background-color: var(--tertiary-color);
 }
 
 .contactText {
@@ -537,11 +547,17 @@ hr {
 }
 
 .footer-icons {
-  color: black;
+  color: var(--main-background-color);
 }
 .form-control {
   border: none !important;
 }
 .input-background {
   background-color: rgba(255, 255, 255, 0.255);
+}
+
+
+.foot-decor {
+  border-top: .2rem solid var(--tertiary-color);
+  background-color: var(--secondary-color);
 }
