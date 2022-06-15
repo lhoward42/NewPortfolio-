@@ -18,7 +18,9 @@ body {
   height: 2em;
   width: 2em;
 } */
-
+.navbar {
+  padding-top: 0 !important;
+}
 .formswift-button {
   visibility: hidden !important;
   width: 0%;
@@ -161,7 +163,7 @@ body {
 
 @media (min-width: 920px) {
   #name {
-    margin-top: 0.35em !important;
+    margin-top: 0.7em !important;
     font-size: 6em !important;
   }
 }
@@ -252,7 +254,8 @@ body {
 }
 @media (max-width: 767px) {
   .background-img {
-    height: 113vh !important;
+    height: 120vh !important;
+    background-size: 200% 100%;
   }
 }
 /* @media (min-width: 990px) {
