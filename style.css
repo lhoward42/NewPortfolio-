@@ -254,7 +254,7 @@ body {
 }
 @media (max-width: 767px) {
   .background-img {
-    height: 120vh !important;
+    height: 121vh !important;
     background-size: 200% 100%;
   }
 }
