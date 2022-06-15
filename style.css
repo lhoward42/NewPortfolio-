@@ -149,7 +149,7 @@ body {
 }
 @media (max-width: 554px) {
   #name {
-    font-size: 3.5em !important;
+    font-size: 3.0em !important;
   }
 }
 @media (min-width: 680px) {
@@ -250,11 +250,11 @@ body {
   -webkit-box-shadow: 0px 13px 14px -10px rgba(79, 79, 79, 0.3);
   box-shadow: 0px 13px 14px -10px rgba(79, 79, 79, 0.3);
 }
-/* @media (max-width: 555px) {
+@media (max-width: 767px) {
   .background-img {
-    height: 110vh !important;
+    height: 113vh !important;
   }
-} */
+}
 /* @media (min-width: 990px) {
   .background-img {
     height: 117vh !important;
@@ -295,6 +295,18 @@ h4 {
   hyphens: auto;
 }
 
+@media (max-width: 767px) {
+  .about-text h4 {
+    font-size: 1.3rem;
+    text-indent: 0%;
+  }
+  .about-body {
+    font-size: 1.3rem;
+   
+    text-indent: 0%;
+  }
+}
+
 @media (max-width: 399px) {
   .about-text {
     padding: 0 0 !important;
@@ -330,13 +342,14 @@ h4 {
     margin-left: 3rem !important;
     padding-right: 3rem !important;
     padding-left: 3rem !important;
+    margin-bottom: 3.5rem !important;
   }
 }
 
 @media (max-width: 767px) {
   .skills {
-    margin-left: 2rem !important;
-    margin-right: 2rem !important;
+    margin-left:.25rem !important;
+    margin-right: .25rem !important;
     padding-right: 1rem !important;
     padding-left: 1rem !important;
   }
@@ -377,20 +390,24 @@ h4 {
 
 @media(max-width: 616px) {
   #skills {
-    font-size: 2.7rem !important;
+    font-size: 2.2rem !important;
   }
 }
 .resume-header {
   text-shadow: 2.8px 2.8px 2.5px rgb(58, 54, 54);
   font-weight: bold;
   font-size: 3em;
+  padding-top: 1.5rem;
+  margin-top: 3rem;
   color: rgb(248, 237, 55, 85%);
   -webkit-text-stroke-width: 0.01em;
   -webkit-text-stroke-color: rgb(255, 255, 244, 50%);
 }
 @media (max-width: 616px) {
   .resume-header {
-    font-size: 1.85em;
+    padding-top: 0 !important;
+    margin-top: 0;
+    font-size: 2.2em;
     text-align: center;
   }
 }
@@ -400,7 +417,7 @@ h4 {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--secondary-color);
 }
-.skillsresume {
+.skills-resume {
   background-image: url(./assets/hunter-james-fAOqScBvMSc-unsplash.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -415,18 +432,20 @@ h4 {
 }
 
 @media (max-width: 425px) {
-  .skillsresume {
-    height: 65vh !important;
+  .skills-resume {
+    height: 80vh !important;
   }
 }
 @media (min-width: 426px) {
-  .skillsresume {
+  .skills-resume {
     height: 70vh !important;
   }
 }
 @media (max-width: 616px) {
   .hide-arrow {
     visibility: hidden;
+    height: 0;
+    width: 0;
   }
 }
 .arrow {
@@ -462,7 +481,7 @@ a:hover > span {
 
 a:link,
 h3 {
-  color: var(--primary-color);
+  
   text-decoration: none;
 }
 
@@ -519,9 +538,9 @@ h3 {
   }
 }
 
-@media (min-width: 760px) {
+@media (min-width: 1023px) {
   .card {
-    margin: 0em 3em !important;
+    margin: 0em 1em !important;
   }
 }
 
@@ -535,7 +554,11 @@ textarea {
   color: var(--secondary-color) !important;
   font-size: 2.8em !important;
 }
-
+@media (max-width: 767px) {
+  .contact-title {
+    font-size: 2.2rem !important;
+  }
+}
 #fs-frm {
   display: flex;
   flex-direction: column;
@@ -552,6 +575,13 @@ hr {
   padding-left: 3.5em;
   padding-right: 3.5em;
   background-color: var(--tertiary-color);
+}
+
+@media (max-width: 767px) {
+  .contact-form {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 .contactText {
