@@ -118,7 +118,12 @@ body {
 #heroDisplay.scrolled {
   visibility: hidden !important;
 }
-
+@media (max-width: 768px ) {
+  #heroDisplay {
+    margin: 0px !important;
+    overflow: visible;
+  }
+}
 @media (min-width: 995px) {
   #heroDisplay {
     margin: 1em 0 5px !important;
@@ -151,13 +156,14 @@ body {
 }
 @media (max-width: 554px) {
   #name {
+    margin-top: 100px;
     font-size: 3.0em !important;
   }
 }
 @media (min-width: 680px) {
   #name {
     font-size: 5em !important;
-    margin-top: 0.2em !important;
+    margin-top: 1.5em !important;
   }
 }
 
