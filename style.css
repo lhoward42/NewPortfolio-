@@ -260,7 +260,7 @@ body {
 }
 @media (max-width: 767px) {
   .background-img {
-    height: 130vh !important;
+    height: 126vh !important;
     background-size: 100% 100%;
   }
 }
