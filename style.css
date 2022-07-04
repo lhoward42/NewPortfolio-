@@ -109,6 +109,7 @@ body {
 
 @media (max-width: 555px) {
   #heroContainer {
+     overflow: hidden;
     margin-top: 2.75rem !important;
     padding-right: 1.2em !important;
     padding-left: 1.2em !important;
